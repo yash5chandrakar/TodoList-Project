@@ -1,38 +1,109 @@
-.App {
+.AddTodoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(238, 238, 229);
+}
+
+.outerDiv {
+  margin: 50px;
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 15px;
+  height: 85vh;
+  overflow: auto;
+}
+
+.subHeading {
+  font-size: 25px;
+  width: 20%;
+  margin-right: -5%;
+}
+
+.inputData {
+  font-size: 45px;
   text-align: center;
+  border-radius: 25px;
+  width: 70%;
+  border: 3px solid grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputData:focus {
+  border: 4px solid black
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskAddDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 2px;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.submitBtn {
+  font-size: 23px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.deleteComp {
+  font-size: 23px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgb(242, 77, 77);
+  cursor: pointer;
+}
+
+.todosDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background: linear-gradient(to left, white, greenyellow); */
 }
 
-.App-link {
-  color: #61dafb;
+.todoCheck {
+  float: left;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoData {
+  float: left;
+  width: 96%;
+  overflow: auto;
+  font-size: 35px;
+  align-self: center;
+  padding: 0px 20px;
+  margin: 10px 0px;
+  font-family: cursive;
+}
+
+.todoItem {
+  display: inline-flex;
+  margin: 5px 10px;
+  padding: 0px 8px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px 3px black;
+  background: linear-gradient(to left, white, greenyellow);
+}
+
+.todoDelete {
+  float: right;
+  font-size: 23px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(242, 77, 77);
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.mainHeading {
+  text-decoration: underline;
+  font-size: 40px;
 }
